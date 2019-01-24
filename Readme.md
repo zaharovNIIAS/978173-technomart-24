@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
-* Студент: [Неопознанный енот](https://up.htmlacademy.ru/htmlcss/24/user/978173).
-* Наставник: `Неизвестно`.
+* Студент: [Захаров Алексей] (https://up.htmlacademy.ru/htmlcss/24/user/978173).
+* Наставник: [Дмитрий Терлюк] (https://htmlacademy.ru/profile/id422681).
 
 ---
 
