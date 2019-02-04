@@ -48,7 +48,7 @@
     </header>
     <main class="container">
         <ul class="breadcrumbs">
-            <li><a href="index.html"></a></li>
+            <li><a href="index.html">Главная</a></li>
             <li><a href="#">Каталог</a></li>
             <li><a href="#">Инструмент</a></li>
             <li class="breadcrumbs-current">Перфораторы</li>
@@ -60,46 +60,62 @@
         </section>
         <section class="filters">
             <h2>Фильтр:</h2>
-            <ul class="filter-list">
-                <li class="filter-item">
-                    <h3>Цена:</h3>
-                    <!-- Здесь будет слайдер -->
-                </li>
-                <li class="filter-item brands">
-                    <h3>Производители:</h3>
-                    <label>
-                        <input type="checkbox" name="brands" value="bosch">
-                        Bosch
-                    </label>
-                    <label>
-                        <input type="checkbox" name="brands" value="interskol">
-                        Интерскол
-                    </label>
-                    <label>
-                        <input type="checkbox" name="brands" value="makita">
-                        Makita
-                    </label>
-                    <label>
-                        <input type="checkbox" name="brands" value="dewalt">
-                        Dewalt
-                    </label>
-                    <label>
-                        <input type="checkbox" name="brands" value="hitachi">
-                        Hitachi
-                    </label>
-                </li>
-                <li class="filter-item power-supply">
-                    <h3>Питание:</h3>
-                    <label>
-                        <input checked name="power-supply" type="radio" value="rechargeable">
-                        Аккумуляторные
-                    </label>
-                    <label>
-                        <input name="power-supply" type="radio" value="amperage">
-                        Сетевые
-                    </label>
-                </li>
-            </ul>
+            <fieldset>
+                <legend>Цена:</legend>
+                <!-- Здесь будет слайдер -->
+            </fieldset>
+            <fieldset>
+                <legend>Производители:</legend>
+                <ul>
+                    <li class="filter-item brands">
+                        <label>
+                            <input type="checkbox" name="brands" value="bosch">
+                            Bosch
+                        </label>
+                    </li>
+                    <li class="filter-item brands">
+                        <label>
+                            <input type="checkbox" name="brands" value="interskol">
+                            Интерскол
+                        </label>
+                    </li>
+                    <li class="filter-item brands">
+                        <label>
+                            <input type="checkbox" name="brands" value="makita">
+                            Makita
+                        </label>
+                    </li>
+                    <li class="filter-item brands">
+                        <label>
+                            <input type="checkbox" name="brands" value="dewalt">
+                            Dewalt
+                        </label>
+                    </li>
+                    <li class="filter-item brands">
+                        <label>
+                            <input type="checkbox" name="brands" value="hitachi">
+                            Hitachi
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Питание:</legend>
+                <ul>
+                    <li class="filter-item power-supply">
+                        <label>
+                            <input checked name="power-supply" type="radio" value="rechargeable">
+                            Аккумуляторные
+                        </label>
+                    </li>
+                    <li class="filter-item power-supply">
+                        <label>
+                            <input name="power-supply" type="radio" value="amperage">
+                            Сетевые
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
             <input type="submit" value="Показать">
         </section>
         <section class="catalog">
@@ -268,6 +284,16 @@
             </p>
         </div>
     </footer>
+    <section class="modal modal-cart-success">
+        <h2>Товар добавлен в корзину!</h2>
+        <ul>
+            <li><a href="order.html">Оформить заказ</a></li>
+            <li><a href="catalog.html">Продолжить покупки</a></li>
+        </ul>
+        <button class="modal-close" type="button">
+            Закрыть
+        </button>
+    </section>
 </body>
 
 </html>
