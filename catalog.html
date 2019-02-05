@@ -12,7 +12,10 @@
             <a class="header-logo" href="index.html">
                 <img src="img/logo.svg" alt="Логотип интернет-магазина «Техномарт»">
             </a>
-            <input type="search" class="header-search" placeholder="Поиск:">
+            <form class="header-search" method="get" action="search.html">
+                <button type="submit">Найти</button>
+                <input type="search" name="text" placeholder="Поиск:">
+            </form>
             <a class="header-bookmarks" href="bookmarks.html" title="Закладки">Закладки:0</a>
             <a class="header-cart cart-full" href="cart.html" title="Корзина">Корзина:10</a>
             <a class="header-order" href="order.html" title="Оформить заказ">Оформить заказ</a>
@@ -22,12 +25,12 @@
             строительных материалов
             и инструментов для ремонта
         </b>
-        <p class="header-contact">
-            <span>
+        <div class="header-contact">
+            <a href="tel:+7-812-555-05-55" title="Телефон интернет-магазина «Техномарт»">
                 +7 (812) 555-05-55
-            </span>
+            </a>
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-        </p>
+        </div>
         <ul class="user-navigation">
             <li class="profile-link"><a href="profile.html">Равшан Джамшутович</a></li>
             <li class="logout-link"><a href="logout.html">Выйти</a></li>
@@ -60,63 +63,65 @@
         </section>
         <section class="filters">
             <h2>Фильтр:</h2>
-            <fieldset>
-                <legend>Цена:</legend>
-                <!-- Здесь будет слайдер -->
-            </fieldset>
-            <fieldset>
-                <legend>Производители:</legend>
-                <ul>
-                    <li class="filter-item brands">
-                        <label>
-                            <input type="checkbox" name="brands" value="bosch">
-                            Bosch
-                        </label>
-                    </li>
-                    <li class="filter-item brands">
-                        <label>
-                            <input type="checkbox" name="brands" value="interskol">
-                            Интерскол
-                        </label>
-                    </li>
-                    <li class="filter-item brands">
-                        <label>
-                            <input type="checkbox" name="brands" value="makita">
-                            Makita
-                        </label>
-                    </li>
-                    <li class="filter-item brands">
-                        <label>
-                            <input type="checkbox" name="brands" value="dewalt">
-                            Dewalt
-                        </label>
-                    </li>
-                    <li class="filter-item brands">
-                        <label>
-                            <input type="checkbox" name="brands" value="hitachi">
-                            Hitachi
-                        </label>
-                    </li>
-                </ul>
-            </fieldset>
-            <fieldset>
-                <legend>Питание:</legend>
-                <ul>
-                    <li class="filter-item power-supply">
-                        <label>
-                            <input checked name="power-supply" type="radio" value="rechargeable">
-                            Аккумуляторные
-                        </label>
-                    </li>
-                    <li class="filter-item power-supply">
-                        <label>
-                            <input name="power-supply" type="radio" value="amperage">
-                            Сетевые
-                        </label>
-                    </li>
-                </ul>
-            </fieldset>
-            <input type="submit" value="Показать">
+            <form class="filter" method="get" action="catalog.html">
+                <fieldset>
+                    <legend>Цена:</legend>
+                    <!-- Здесь будет выбор диапозона цен -->
+                </fieldset>
+                <fieldset>
+                    <legend>Производители:</legend>
+                    <ul>
+                        <li class="filter-item brands">
+                            <label>
+                                <input type="checkbox" name="brands" value="bosch" checked>
+                                Bosch
+                            </label>
+                        </li>
+                        <li class="filter-item brands">
+                            <label>
+                                <input type="checkbox" name="brands" value="interskol">
+                                Интерскол
+                            </label>
+                        </li>
+                        <li class="filter-item brands">
+                            <label>
+                                <input type="checkbox" name="brands" value="makita" checked>
+                                Makita
+                            </label>
+                        </li>
+                        <li class="filter-item brands">
+                            <label>
+                                <input type="checkbox" name="brands" value="dewalt">
+                                Dewalt
+                            </label>
+                        </li>
+                        <li class="filter-item brands">
+                            <label>
+                                <input type="checkbox" name="brands" value="hitachi">
+                                Hitachi
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Питание:</legend>
+                    <ul>
+                        <li class="filter-item power-supply">
+                            <label>
+                                <input checked name="power-supply" type="radio" value="rechargeable">
+                                Аккумуляторные
+                            </label>
+                        </li>
+                        <li class="filter-item power-supply">
+                            <label>
+                                <input name="power-supply" type="radio" value="amperage">
+                                Сетевые
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <input type="submit" value="Показать">
+            </form>
         </section>
         <section class="catalog">
             <h2 class="visually-hidden">Карточки перфораторов</h2>
@@ -253,10 +258,12 @@
                 <li><a href="delivery.html">Доставка</a></li>
                 <li><a href="contacts.html">Контакты</a></li>
             </ul>
-            <p class="footer-contact">
-                г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-                +7 (812) 555-05-55
-            </p>
+            <div class="footer-contact">
+                г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+                <a href="tel:+7-812-555-05-55" title="Телефон интернет-магазина «Техномарт»">
+                    +7 (812) 555-05-55
+                </a>
+            </div>
             <ul class="footer-advantage-navigation">
                 <li><a href="material.html">Материалы</a></li>
                 <li><a href="equipment.html">Техника</a></li>
@@ -270,9 +277,9 @@
                 Все права защищены
             </p>
             <ul class="footer-social-list">
-                <li><a href="#">Вконтакте</a></li>
-                <li><a href="#">Фейсбук</a></li>
-                <li><a href="#">Инстаграм</a></li>
+                <li><a href="#">Компания «Техномарт» во Вконтакте</a></li>
+                <li><a href="#">Компания «Техномарт» в Фейсбуке</a></li>
+                <li><a href="#">Компания «Техномарт» в Инстаграме</a></li>
             </ul>
             <p class="footer-feedback">
                 Обратная связь:<br>
