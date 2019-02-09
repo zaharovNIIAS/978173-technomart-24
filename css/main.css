@@ -7,7 +7,7 @@
 	line-height: 24px;
 	background-color: #ffffff;
 }
-.container
+.container-between
 {
     width: 940px;
     margin: 0 auto;
@@ -16,10 +16,19 @@
     display: flex;
     justify-content: space-between;
 }
+.container-around
+{
+    width: 940px;
+    margin: 0 auto;
+    padding: 45px 10px;
+
+    display: flex;
+    justify-content: space-around;
+}
 .header-top-wrapper
 {   
      width: 100%;    
-    background-color: #293449;
+    background-color: #293449;   
 }
 .header-bottom-wrapper
 {   
@@ -128,4 +137,62 @@ width: 100%;
 .company
 {
     width:540px;
+}
+.header-contact
+{
+    width: 270px; 
+    font-size: 12px;
+    color:#32425c; 
+    text-align: center;
+}
+.header-contact a
+{
+   font-size: 21px;
+   color:#ee3643;
+   text-decoration: none;
+   display:block;
+   background-image: url('../img/icon/phone.svg');
+   background-repeat: no-repeat;
+   background-position: 15px;    
+   background-color:inherit;
+   border:3px solid #ffffff;
+   padding: 10px 0px;
+}
+h1
+{
+    margin: 0;
+    padding: 0;
+    width: 200px;  
+    font-size: 12px;
+   color:#ee3643;
+   font-style: italic;
+}
+.user-navigation
+{
+    width: 280px; 
+    list-style: none;    
+    padding: 0;
+    display: flex;
+    justify-content: space-between;  
+    text-align: center;
+    
+}
+.user-navigation a
+{
+    padding: 10px 25px;
+    font-size: 21px;
+    color:#000000;
+    text-decoration: none;
+    background-color: #ffffff;  
+}
+.registration-link
+{
+   
+    width: 150px;  
+   
+}
+.login-link
+{
+   
+    width: 120px;  
 }
