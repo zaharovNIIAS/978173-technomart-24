@@ -7,6 +7,12 @@
 	line-height: 24px;
 	background-color: #ffffff;
 }
+.container
+{
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
 .container-between
 {
     width: 940px;
@@ -35,14 +41,16 @@
 width: 100%;
    background-color: #f3f7f9;
 }
-.header-logo
+.header-logo,
+.main-footer-logo
 {
     width: 220px;  
     background-color: #ee3643;  
     display: flex;
     justify-content: center;
 }
-.header-logo img{
+.header-logo img,
+.main-footer-logo img{
     width: 110px;
     padding-top: 10px;  
     padding-bottom: 10px;  
@@ -62,7 +70,7 @@ width: 100%;
     background-position: center;    
     background-color:inherit;
     border:none;
-    color: transparent;
+    font-size: 0px;
     opacity: 0.4;
     cursor:pointer;
 }
@@ -110,10 +118,10 @@ width: 100%;
 }
 .site-navigation
 { 
-    width: 950px;
+    width: 940px;
     
     margin: 0 auto;
-    padding: 0 5px;
+    padding: 0 10px;
     margin-bottom: 60px;
 }
 .site-navigation ul
@@ -130,6 +138,12 @@ width: 100%;
   color: #ffffff;
   text-decoration: none;
 }
+
+main
+{
+margin-bottom: 85px;
+}
+
 .contacts
 {
     width: 300px;  
@@ -138,10 +152,22 @@ width: 100%;
 {
     width:540px;
 }
+.company h2,
+.contacts h2
+{
+    font-size: 30px;
+    color:#000000;
+    text-transform: uppercase;
+}
+.button-map img
+{
+   width:300px;
+   height:158px;
+}
 .header-contact
 {
     width: 270px; 
-    font-size: 12px;
+    font-size: 14px;
     color:#32425c; 
     text-align: center;
 }
@@ -163,7 +189,7 @@ h1
     margin: 0;
     padding: 0;
     width: 200px;  
-    font-size: 12px;
+    font-size: 16px;
    color:#ee3643;
    font-style: italic;
 }
@@ -186,13 +212,168 @@ h1
     background-color: #ffffff;  
 }
 .registration-link
-{
-   
-    width: 150px;  
-   
+{   
+    width: 150px;     
 }
 .login-link
-{
-   
+{   
     width: 120px;  
 }
+
+.footer-top-wrapper
+{   
+    padding-bottom: 30px;
+    width: 100%;    
+   background-color: #32425c;   
+}
+.footer-bottom-wrapper
+{   
+    padding-top: 40px;
+    padding-bottom: 30px;
+    width: 100%;    
+   background-color: #293449;   
+}
+.footer-site-navigation
+{
+    width: 570px;
+    background-color: inherit;
+    list-style: none;
+    margin: 0;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-site-navigation a
+ {
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer-top-margin
+{
+    margin-bottom: 35px;
+}
+.footer-contact
+{
+    font-size: 18px;
+    color:#f3f7f9;
+}
+.footer-contact a
+{
+    font-size: 18px;
+    color:#f3f7f9;
+    text-decoration: none;
+    display:block; 
+}
+.footer-advantage-navigation
+{
+    width: 525px;
+    background-color: inherit;
+    list-style: none;
+    margin: 0;   
+    display: flex;
+    justify-content: space-between;
+}
+.footer-advantage-navigation a
+{
+    font-size: 18px;
+    color:#ffd180;
+    text-decoration: none;   
+}
+
+.footer-social-list
+{
+    width: 130px;
+    list-style: none;
+    margin: 0;   
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+
+}
+
+.social-vk
+{
+    width:40px;
+    height:40px; 
+    display: block;
+    font-size:0px;
+    background-color:#212a3a; 
+    background-image: url('../img/icon/vk.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+.social-fb
+{
+    width:40px;
+    height:40px; 
+    display: block;
+    font-size:0px;
+    background-color:#212a3a; 
+    background-image: url('../img/icon/fb.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+.social-insta
+{
+    width:40px;
+    height:40px; 
+    display: block;
+    font-size:0px;
+    background-color:#212a3a; 
+    background-image: url('../img/icon/insta.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+.footer-copyright
+{
+    font-size: 16px;
+    color:#ffffff; 
+}
+.footer-feedback,
+.footer-developer
+{
+    font-size: 16px;
+    color:#ffffff; 
+}
+.footer-feedback a,
+.footer-developer a
+{
+    font-size: 16px;
+    color:#ffd180; 
+    text-decoration: none;
+    display: block;
+}
+.popular-products-header,
+.popular-brands-header
+{
+    background: #f9f5f0;    
+}
+.popular-product-list
+{
+    list-style: none;
+    display:flex;
+    justify-content: space-between;
+}
+.popular-brand-list
+{
+    list-style: none;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.popular-brand-item a
+{
+    display: block;
+    width:220px;
+    height: 145px;
+}
+
+.services
+{   
+     width: 100%;    
+    background-color: #f4f8f9;   
+}
+
