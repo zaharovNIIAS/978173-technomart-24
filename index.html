@@ -4,24 +4,28 @@
 <head>
   <meta charset="utf-8">
   <title>Техномарт</title>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans:400,700&amp;subset=cyrillic"
-    rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic-ext,cyrillic' rel='stylesheet'
+    type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Cuprum:400,700&subset=cyrillic-ext,cyrillic' rel='stylesheet'
+    type='text/css'>
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="header">
     <div class="header-top-wrapper">
-      <div class="container-between">
+      <div class="header-top-container">
         <a class="header-logo" href="index.html">
           <img src="img/logo.svg" alt="Логотип интернет-магазина «Техномарт»">
         </a>
         <form class="header-search" method="get" action="search.html">
-          <button type="submit">Найти</button>
-          <input type="search" name="text" placeholder="Поиск:">
+          <input type="search" name="text" id="header-search" placeholder="Поиск:">
+          <label for="header-search">Поисковый запрос</label>
+          <button class="visually-hidden" type="submit">Найти</button>
         </form>
-        <a class="header-bookmarks" href="bookmarks.html" title="Закладки">Закладки:0</a>
-        <a class="header-cart cart-empty" href="cart.html" title="Корзина">Корзина:0</a>
+        <a class="header-bookmarks" href="bookmarks.html" title="Закладки">Закладки: 0</a>
+        <a class="header-cart cart-empty" href="cart.html" title="Корзина">Корзина: 0</a>
         <a class="header-order" href="order.html" title="Оформить заказ">Оформить заказ</a>
       </div>
     </div>
