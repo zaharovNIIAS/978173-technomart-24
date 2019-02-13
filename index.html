@@ -20,7 +20,7 @@
           <img src="img/logo.svg" alt="Логотип интернет-магазина «Техномарт»">
         </a>
         <form class="header-search" method="get" action="search.html">
-          <input type="search" name="text" id="header-search" placeholder="Поиск:">
+          <input type="search" name="text" id="header-search" placeholder="Поиск:" required>
           <label for="header-search">Поисковый запрос</label>
           <button class="visually-hidden" type="submit">Найти</button>
         </form>
@@ -30,7 +30,7 @@
       </div>
     </div>
     <div class="header-bottom-wrapper">
-      <div class="container-around">
+      <div class="header-middle-container">
         <h1>
           Интернет-магазин
           строительных материалов
@@ -43,8 +43,8 @@
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
         </div>
         <ul class="user-navigation">
-          <li class="login-link"><a href="login.html">Вход</a></li>
-          <li class="registration-link"><a href="registration.html">Регистрация</a></li>
+          <li><a class="login-link" href="login.html">Войти</a></li>
+          <li><a class="registration-link" href="registration.html">Регистрация</a></li>
         </ul>
       </div>
       <nav class="site-navigation">
@@ -60,77 +60,80 @@
       </nav>
     </div>
   </header>
-  <main>
-    <div class="container">
-      <section class="advantages">
-        <ul class="advantage-list">
-          <li class="advantage-item new-item">
+  <main class="main">
+    <div class="main-container">
+      <section class="our-offers">
+        <h2 class="visually-hidden">Наши предложения</h2>
+        <ul class="product-offers-list">
+          <li class="product-offers-item">
             <h3>
               Материалы
             </h3>
             <a href="material.html">на любой вкус</a>
           </li>
-          <li class="advantage-item">
+          <li class="product-offers-item">
             <h3>
               Инструмент
             </h3>
             <a href="tools.html">на все случаи</a>
           </li>
-          <li class="advantage-item">
+          <li class="product-offers-item">
             <h3>
               Техника
             </h3>
             <a href="equipment.html">для стройки</a>
           </li>
-          <li class="advantage-item">
+        </ul>
+        <div class="product-offers-gallery">
+            <span class="gallery-button-back">Назад</span>
+            <ul class="gallery-list">
+              <li class="gallery-item">
+                <figure>
+                  <img src="img/drill.jpg" alt="Дрели">
+                  <figcaption class="gallery-item-header">
+                    <h3>
+                      Дрели
+                    </h3>
+                    <span>
+                      Соседям на радость!
+                    </span>
+                  </figcaption>
+                </figure>
+                <a href="catalog.html?category=drill">открыть каталог</a>
+              </li>
+              <li class="gallery-item">
+                <figure>
+                  <img src="img/perforator.jpg" alt="Перфораторы">
+                  <figcaption class="gallery-item-header">
+                    <h3>
+                      Перфораторы
+                    </h3>
+                    <span>
+                      Настоящие мужские игрушки
+                    </span>
+                  </figcaption>
+                </figure>
+                <a href="catalog.html?category=perforator">открыть каталог</a>
+              </li>
+            </ul>
+            <span class="gallery-button-next">Вперед</span>
+          </div>
+        <ul class="special-offers-list">
+          <li class="special-offers-item">
             <h3>
               Скидки 50%
             </h3>
             <a href="discounts.html">на 350 товаров</a>
           </li>
-          <li class="advantage-item">
+          <li class="special-offers-item">
             <h3>
               Доставка
             </h3>
             <a href="delivery.html">бесплатно</a>
           </li>
         </ul>
-      </section>
-      <section class="gallery">
-        <span class="gallery-button-back">Назад</span>
-        <ul class="gallery-list">
-          <li class="gallery-item">
-            <figure>
-              <img src="img/drill.jpg" alt="Дрели">
-              <figcaption class="gallery-item-header">
-                <h3>
-                  Дрели
-                </h3>
-                <span>
-                  Соседям на радость!
-                </span>
-              </figcaption>
-            </figure>
-            <a href="catalog.html?category=drill">открыть каталог</a>
-          </li>
-          <li class="gallery-item">
-            <figure>
-              <img src="img/perforator.jpg" alt="Перфораторы">
-              <figcaption class="gallery-item-header">
-                <h3>
-                  Перфораторы
-                </h3>
-                <span>
-                  Настоящие мужские игрушки
-                </span>
-              </figcaption>
-            </figure>
-            <a href="catalog.html?category=perforator">открыть каталог</a>
-          </li>
-        </ul>
-        <span class="gallery-button-next">Вперед</span>
-      </section>
     </div>
+    </section>
     <section class="popular-products">
       <div class="container-between popular-products-header">
         <h2>
