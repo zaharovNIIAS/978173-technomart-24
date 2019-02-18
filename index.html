@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="index-header">
     <div class="header-top-wrapper">
       <div class="header-top-container">
         <a class="header-logo" href="index.html">
@@ -25,7 +25,7 @@
           <button class="visually-hidden" type="submit">Найти</button>
         </form>
         <a class="header-bookmarks" href="bookmarks.html" title="Закладки">Закладки: 0</a>
-        <a class="header-cart cart-empty" href="cart.html" title="Корзина">Корзина: 0</a>
+        <a class="header-cart" href="cart.html" title="Корзина">Корзина: 0</a>
         <a class="header-order" href="order.html" title="Оформить заказ">Оформить заказ</a>
       </div>
     </div>
@@ -43,8 +43,8 @@
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
         </div>
         <ul class="user-navigation">
-          <li><a class="login-link" href="login.html">Войти</a></li>
-          <li><a class="registration-link" href="registration.html">Регистрация</a></li>
+          <li class="login-link"><a href="login.html">Войти</a></li>
+          <li class="registration-link"><a href="registration.html">Регистрация</a></li>
         </ul>
       </div>
       <nav class="site-navigation">
@@ -61,7 +61,7 @@
     </div>
   </header>
   <main class="main">
-    <div class="main-container">
+    <div class="main-container-top">
       <section class="our-offers">
         <h2 class="visually-hidden">Наши предложения</h2>
         <ul class="product-offers-list">
@@ -187,6 +187,7 @@
             <span class="new-price">25500 Р.</span>
           </li>
           <li class="popular-product-item new-item">
+              <div class="flag flag-new">новинка</div>
             <img src="img/product/bfg-2000.png" alt="Перфоратор BOSCH BFG 2000">
             <div class="popular-product-actions">
               <a class="buy" href="#">Купить</a>
@@ -303,7 +304,7 @@
         </ul>
       </div>
     </section>
-    <div class="container-between">
+    <div class="main-container-middle">
       <section class="company">
         <h2>
           КОМПАНИЯ «Техномарт»
@@ -350,7 +351,7 @@
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
       </div>
-      <div class="container-between">
+      <div class="footer-top-container">
         <div class="footer-contact">
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           <a href="tel:+7-812-555-05-55" title="Телефон интернет-магазина «Техномарт»">
@@ -364,11 +365,9 @@
           <li><a href="special-offers.html">Спецпредложения</a></li>
         </ul>
       </div>
-      <div>
-      </div>
     </div>
     <div class="footer-bottom-wrapper">
-      <div class="container-between">
+      <div class="footer-bottom-container">
         <p class="footer-copyright">
           © 2010–2019 Компания «Техномарт»<br>
           Все права защищены
