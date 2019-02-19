@@ -70,7 +70,6 @@
                 <li><a href="#">Инструмент</a></li>
                 <li>Перфораторы</li>
             </ul>
-
             <h1 class="page-title">Перфораторы</h1>
             <div class="main-catalog-wrapper">
                 <section class="main-catalog-filters">
@@ -78,7 +77,19 @@
                     <form method="get" action="catalog.html">
                         <fieldset class="filters-price">
                             <legend>Цена:</legend>
-                            <!-- Здесь будет выбор диапозона цен -->
+                            <div class="range-filter">
+                                <div class="range-controls">
+                                    <div class="scale">
+                                        <div class="bar"></div>
+                                    </div>
+                                    <div class="toggle toggle-min"></div>
+                                    <div class="toggle toggle-max"></div>
+                                </div>
+                                <div class="price-controls">
+                                    <input class="min-price" name="min-price" type="text" value="0" disabled>
+                                    <input class="max-price" name="max-price" type="text" value="30000" disabled>
+                                </div>
+                            </div>
                         </fieldset>
                         <fieldset class="filters-brands">
                             <legend>Производители:</legend>
@@ -139,7 +150,25 @@
                 <div class="products-wrapper">
                     <section class="sorting">
                         <h2>Сортировка:</h2>
-                        <!-- Здесь будет сортировка -->
+                        <ul class="sorting-position-list">
+                            <li class="sorting-position-item current">
+                                <a href="#">По цене</a>
+                            </li>
+                            <li class="sorting-position-item">
+                                <a href="#">По типу</a>
+                            </li>
+                            <li class="sorting-position-item">
+                                <a href="#">По функционалу</a>
+                            </li>
+                        </ul>
+                        <ul class="sorting-direction-list">
+                            <li class="sorting-direction-asc current">
+                                <a href="#">По возрастанию</a>
+                            </li>
+                            <li class="sorting-direction-desc">
+                                <a href="#">По убыванию</a>
+                            </li>
+                        </ul>
                     </section>
                     <section class="products">
                         <h2 class="visually-hidden">Карточки перфораторов</h2>
@@ -276,53 +305,65 @@
                             </li>
                         </ul>
                     </section>
+                    <ul class="products-pagination-list">
+                        <li class="products-pagination-item current"><a href="#">1</a></li>
+                        <li class="products-pagination-item"><a href="#">2</a></li>
+                        <li class="products-pagination-item"><a href="#">3</a></li>
+                        <li class="products-pagination-item"><a href="#">Следущая</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </main>
     <footer class="main-footer">
-        <div>
-            <a class="main-footer-logo" href="index.html">
-                <img src="img/logo.svg" alt="Логотип интернет-магазина «Техномарт»">
-            </a>
-            <ul class="footer-site-navigation">
-                <li><a href="info.html">Компания</a></li>
-                <li><a href="news.html">Новости</a></li>
-                <li><a href="catalog.html">Каталог</a></li>
-                <li><a href="delivery.html">Доставка</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
-            </ul>
-            <div class="footer-contact">
-                г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-                <a href="tel:+7-812-555-05-55" title="Телефон интернет-магазина «Техномарт»">
-                    +7 (812) 555-05-55
+        <div class="footer-top-wrapper">
+            <div class="footer-top-container">
+                <a class="main-footer-logo" href="index.html">
+                    <img src="img/logo.svg" alt="Логотип интернет-магазина «Техномарт»">
                 </a>
+                <ul class="footer-site-navigation">
+                    <li><a href="info.html">Компания</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="delivery.html">Доставка</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
             </div>
-            <ul class="footer-advantage-navigation">
-                <li><a href="material.html">Материалы</a></li>
-                <li><a href="equipment.html">Техника</a></li>
-                <li><a href="tools.html">Инструмент</a></li>
-                <li><a href="special-offers.html">Спецпредложения</a></li>
-            </ul>
+            <div class="footer-top-container">
+                <div class="footer-contact">
+                    г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+                    <a href="tel:+7-812-555-05-55" title="Телефон интернет-магазина «Техномарт»">
+                        +7 (812) 555-05-55
+                    </a>
+                </div>
+                <ul class="footer-advantage-navigation">
+                    <li><a href="material.html">Материалы</a></li>
+                    <li><a href="equipment.html">Техника</a></li>
+                    <li><a href="tools.html">Инструмент</a></li>
+                    <li><a href="special-offers.html">Спецпредложения</a></li>
+                </ul>
+            </div>
         </div>
-        <div>
-            <p class="footer-copyright">
-                © 2010–2019 Компания «Техномарт»<br>
-                Все права защищены
-            </p>
-            <ul class="footer-social-list">
-                <li><a href="#">Компания «Техномарт» во Вконтакте</a></li>
-                <li><a href="#">Компания «Техномарт» в Фейсбуке</a></li>
-                <li><a href="#">Компания «Техномарт» в Инстаграме</a></li>
-            </ul>
-            <p class="footer-feedback">
-                Обратная связь:<br>
-                <a href="mailto:mail@htmlacademy.ru" title="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </p>
-            <p class="footer-developer">
-                Разработано —<br>
-                <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-            </p>
+        <div class="footer-bottom-wrapper">
+            <div class="footer-bottom-container">
+                <p class="footer-copyright">
+                    © 2010–2019 Компания «Техномарт»<br>
+                    Все права защищены
+                </p>
+                <ul class="footer-social-list">
+                    <li><a class="social-vk" href="#">Компания «Техномарт» во Вконтакте</a></li>
+                    <li><a class="social-fb" href="#">Компания «Техномарт» в Фейсбуке</a></li>
+                    <li><a class="social-insta" href="#">Компания «Техномарт» в Инстаграме</a></li>
+                </ul>
+                <p class="footer-feedback">
+                    Обратная связь:
+                    <a href="mailto:mail@htmlacademy.ru" title="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                </p>
+                <p class="footer-developer">
+                    Разработано —
+                    <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+                </p>
+            </div>
         </div>
     </footer>
     <section class="modal modal-cart-success">
