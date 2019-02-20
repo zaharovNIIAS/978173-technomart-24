@@ -187,7 +187,7 @@
             <span class="new-price">25500 Р.</span>
           </li>
           <li class="popular-product-item new-item">
-              <div class="flag flag-new">новинка</div>
+            <div class="flag flag-new">новинка</div>
             <img src="img/product/bfg-2000.png" alt="Перфоратор BOSCH BFG 2000">
             <div class="popular-product-actions">
               <a class="buy" href="#">Купить</a>
@@ -391,20 +391,26 @@
   <section class="modal modal-write-us">
     <h2 class="visually-hidden">Напишите нам</h2>
     <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
-      <label>
-        Ваше имя:
-        <input type="text" placeholder="Имя Фамилия" name="name" required>
-      </label>
-      <label>
-        Ваш e-mail:
-        <input type="email" placeholder="email@example.com" name="email" required>
-      </label>
-      <label>
-        Текст письма:
-        <textarea name="text" placeholder="В свободной форме" required rows="5"></textarea>
-      </label>
-      <div>
-        <button class="write-us-form-submit" type="submit">Отправить</button>
+      <div class="modal-write-us-top-wrapper">
+        <div class="modal-write-us-top-container">
+          <p class="modal-write-us-item">
+            <label for="modal-write-us-name">Ваше имя:</label>
+            <input type="text" id="modal-write-us-name" placeholder="Имя Фамилия" name="name" required>
+          </p>
+          <p class="modal-write-us-item">
+            <label for="modal-write-us-email">Ваш e-mail:</label>
+            <input type="email" id="modal-write-us-email" placeholder="email@example.com" name="email" required>
+          </p>
+          <p class="modal-write-us-item wide">
+            <label for="modal-write-us-text">Текст письма:</label>
+            <textarea name="text" id="modal-write-us-text" placeholder="В свободной форме" required rows="5"></textarea>
+          </p>
+        </div>
+      </div>
+      <div class="modal-write-us-bottom-wrapper">
+        <div class="modal-write-us-bottom-container">
+          <button class="write-us-form-submit" type="submit">Отправить</button>
+        </div>
       </div>
       <button class="modal-close" type="button">
         Закрыть
