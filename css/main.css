@@ -11,11 +11,16 @@ body
 	line-height: 24px;
 	background-color: #ffffff;
 }
+    /*min-width: 960px;*/
+    /*центровать body через min-width не стоит*/
 img {
     max-width: 100%;
     height: auto;
   }
-  
+  /*разберись с отступами и табуляцией - все должно быть единообразно. Или ставь "{" сразу после селектора везде или везде переноси на следующую строчку
+css стили тоже не должны "плясать" - все по одно линии
+расстояние между селекторами тоже везде одинаковое. Или везде есть пустая строка, или везде нет пустой строки
+критерий Б15. Единообразное написание и форматирование кода в HTML, CSS и JavaScript.*/
   .visually-hidden:not(:focus):not(:active),
   input[type="checkbox"].visually-hidden,
   input[type="radio"].visually-hidden {
