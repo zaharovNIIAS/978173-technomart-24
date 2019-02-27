@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;    
 }
+a{
+  transition: all .5s;
+}
 body
 {
     min-width: 960px;
@@ -850,6 +853,7 @@ width: 135px;
    background: #ee3643;
    border-radius: 2px;
    margin-right: 25px;
+  /*у интерактивного элемента нет ховер эффекта*/
 }
 
 /* Product list */
@@ -872,6 +876,7 @@ width: 135px;
     margin-bottom: 20px;  
     border: 1px solid #ccc;
     text-align: center;
+  transition: all .3s;
 }
 .popular-product-item:nth-child(4n) {
     margin-right: 0;
