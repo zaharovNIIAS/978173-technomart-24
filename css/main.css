@@ -76,7 +76,7 @@ input[type="radio"].visually-hidden {
     background-color: #ee3643;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;    
 }
 
 .header-logo::after {
