@@ -76,7 +76,7 @@ input[type="radio"].visually-hidden {
     background-color: #ee3643;
     display: flex;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
 }
 
 .header-logo::after {
@@ -196,18 +196,15 @@ input[type="radio"].visually-hidden {
     text-decoration: none;
 }
 
-.header-bookmarks,
-.header-cart {
-    position: relative;
-}
-
 .header-bookmarks {
+    position: relative;
     display: block;
     padding-left: 16px;
     width: 134px;
 }
 
 .header-cart {
+    position: relative;
     display: block;
     padding-left: 18px;
     width: 132px;
